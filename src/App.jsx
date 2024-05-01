@@ -7,6 +7,7 @@ import {
 import Home from './component/Home/Home';
 import About from './component/About/About';
 import Nav from './component/Nav/Nav';
+import Products from './component/Products/Products';
 function App() {
 
  
@@ -21,6 +22,14 @@ function App() {
       path: "/about",
       element: <><Nav></Nav><About/></> 
     },
+    {
+      path: "/products",
+      element: <><Nav></Nav><Products/></> 
+    },
+    {
+      path: "/products/:id",
+      element: <><Nav></Nav><Products/></> 
+    }
   ]);
 
   return (
